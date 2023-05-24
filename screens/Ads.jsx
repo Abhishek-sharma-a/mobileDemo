@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 
-const Register = () => {
+const Ads = () => {
     return (
         <View>
             
@@ -11,4 +11,4 @@ const Register = () => {
 
 const styles = StyleSheet.create({})
 
-export default Register;
+export default Ads;

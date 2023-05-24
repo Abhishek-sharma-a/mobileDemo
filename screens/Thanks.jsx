@@ -1,8 +1,8 @@
 import React from "react";
-import { View, StyleSheet, Image, Text } from "react-native";
+import { View, StyleSheet, Image, Text, TouchableOpacity } from "react-native";
 import Logo from "../assets/icon.png";
 
-const Thanks = () => {
+const Thanks = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View>
@@ -25,7 +25,7 @@ const Thanks = () => {
       </View>
       <View style={styles.size}>
         <Text style={styles.back}>
-          Back to <Text style={styles.sign}>Sign in here</Text>
+          Back to <Text style={styles.sign} onPress={()=>{navigation.navigate("Login")}}>Sign in here</Text>
         </Text>
       </View>
     </View>
@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
     fontSize: 25,
     color: "#fff",
     marginTop: 100,
-    textAlign:"center",
-   
+    textAlign: "center",
+
     color: "#146e93",
   },
   verify: {

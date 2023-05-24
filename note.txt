@@ -1,0 +1,1 @@
+HOme,profile,Ads,History,Bookmarks,Notifications,chat Setting theses pages show after Login
